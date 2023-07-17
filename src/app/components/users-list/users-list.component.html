@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <li class="list-group-item"><h4>Lista de usuarios</h4></li>
+  <a
+    href="#"
+    class="list-group-item list-group-item-action"
+    [routerLink]="['users', user.id]"
+    [routerLinkActive]="['active']"
+    *ngFor="let user of users; let isFirst = first"
+    >{{ user.name }}</a
+  >
+</ul>

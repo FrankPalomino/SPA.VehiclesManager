@@ -1,0 +1,46 @@
+<div *ngIf="user">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Información del Usuario</h5>
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>Nombre:</strong> <span> {{ user.name }}</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Apellido:</strong>
+            <span> {{ user.surname }}</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>DNI:</strong> <span> {{ user.dni }}</span>
+          </p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Tarjeta:</strong> <span> {{ user.card }}</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>
+            <strong>Teléfono:</strong> <span> {{ user.phone }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    type="button"
+    class="btn btn-primary mt-3"
+    [routerLink]="['vehicles']"
+  >
+    Mostrar Vehículos
+  </button>
+</div>

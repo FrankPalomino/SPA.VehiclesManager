@@ -1,0 +1,16 @@
+<div class="card-deck">
+  <div class="card mb-3" *ngFor="let vehicle of vehicles; index as i">
+    <div class="card-body">
+      <h5 class="card-title">Vehículo {{ i + 1 }}</h5>
+      <p class="card-text">
+        <strong>Marca:</strong> <span> {{ vehicle.brand }}</span>
+      </p>
+      <p class="card-text">
+        <strong>Modelo:</strong> <span> {{ vehicle.model }}</span>
+      </p>
+      <p class="card-text">
+        <strong>Potencia:</strong> <span> {{ vehicle.power }}</span>
+      </p>
+    </div>
+  </div>
+</div>
